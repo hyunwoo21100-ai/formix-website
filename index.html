@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORMIX — Custom Sports Design</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#0a0a0a;color:#fff;line-height:1.6}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;border-bottom:1px solid #222;position:sticky;top:0;background:#0a0a0aeF;backdrop-filter:blur(10px);z-index:5}
+.logo{font-size:28px;font-weight:900;letter-spacing:3px}
+nav a{color:#aaa;text-decoration:none;margin-left:24px;font-size:14px}
+nav a:hover{color:#fff}
+.hero{min-height:82vh;display:flex;align-items:center;padding:70px 7%;background:radial-gradient(circle at 75% 30%,#252525 0,#0a0a0a 38%)}
+.hero-content{max-width:760px}
+.badge{display:inline-block;border:1px solid #444;border-radius:50px;padding:7px 14px;color:#bbb;font-size:12px;letter-spacing:2px;margin-bottom:22px}
+h1{font-size:clamp(55px,10vw,110px);line-height:.9;letter-spacing:-5px}
+.hero p{max-width:560px;color:#aaa;margin:28px 0;font-size:18px}
+.btn{display:inline-block;background:#fff;color:#000;padding:14px 22px;border-radius:5px;text-decoration:none;font-weight:800;margin-right:8px}
+.btn.outline{background:transparent;color:#fff;border:1px solid #555}
+section{padding:80px 7%;border-top:1px solid #1c1c1c}
+.title{font-size:42px;margin-bottom:12px}
+.sub{color:#888;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#121212;border:1px solid #242424;border-radius:12px;padding:28px;min-height:150px}
+.card h3{margin-bottom:10px;font-size:20px}
+.card p{color:#888;font-size:14px}
+.portfolio{height:260px;border-radius:12px;background:linear-gradient(145deg,#222,#0f0f0f);border:1px solid #292929;display:flex;align-items:end;padding:20px;font-size:18px;font-weight:800}
+.steps .card{min-height:auto}
+.price{font-size:30px;font-weight:900;margin-top:12px}
+.cta{text-align:center;background:#f4f4f4;color:#000}
+.cta p{color:#555;margin:10px auto 25px;max-width:550px}
+.cta .btn{background:#000;color:#fff}
+footer{padding:30px 7%;color:#666;text-align:center;font-size:13px}
+@media(max-width:650px){nav{padding:16px 5%}nav div:last-child{display:none}.hero{padding:60px 5%}section{padding:60px 5%}h1{letter-spacing:-3px}.title{font-size:34px}}
+
+.portfolio{position:relative;overflow:hidden;height:300px;padding:0;background:#111}
+.portfolio img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.portfolio:hover img{transform:scale(1.03)}
+.portfolio span{position:absolute;left:14px;bottom:14px;background:#000d;color:#fff;padding:6px 10px;border-radius:4px;font-size:12px;letter-spacing:1.5px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">FORMIX</div>
+  <div>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Jasa</a>
+    <a href="#order">Order</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <span class="badge">CUSTOM SPORTS DESIGN</span>
+    <h1>YOUR TEAM.<br>YOUR FORM.</h1>
+    <p>Jasa desain jersey custom untuk futsal, basket, voli, esports, sekolah, komunitas, dan kebutuhan sportswear lainnya.</p>
+    <a class="btn" href="https://www.instagram.com/formixid1/" target="_blank">ORDER VIA INSTAGRAM</a>
+    <a class="btn outline" href="#portfolio">LIHAT PORTFOLIO</a>
+  </div>
+</header>
+
+<section id="services">
+  <h2 class="title">OUR SERVICES</h2>
+  <p class="sub">FORMIX hanya menyediakan jasa desain — tidak mencetak jersey.</p>
+  <div class="grid">
+    <div class="card"><h3>👕 Jersey Design</h3><p>Desain jersey custom sesuai konsep dan identitas tim.</p></div>
+    <div class="card"><h3>🛡️ Team Logo</h3><p>Desain logo tim yang bisa dipadukan dengan jersey.</p></div>
+    <div class="card"><h3>🔢 Name & Number</h3><p>Penempatan nama, nomor, sponsor, dan elemen pendukung.</p></div>
+    <div class="card"><h3>🎨 Custom Sports Design</h3><p>Desain olahraga lainnya sesuai kebutuhan pelanggan.</p></div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2 class="title">PORTFOLIO</h2>
+  <p class="sub">Tempatkan hasil desain jersey kamu di bagian ini.</p>
+  <div class="grid portfolio-grid">
+<div class="portfolio"><img src="formix_portfolio/futsal.jpg" alt="FUTSAL jersey design"><span>FUTSAL</span></div>
+<div class="portfolio"><img src="formix_portfolio/basket.jpg" alt="BASKETBALL jersey design"><span>BASKETBALL</span></div>
+<div class="portfolio"><img src="formix_portfolio/voli.jpg" alt="VOLI jersey design"><span>VOLI</span></div>
+<div class="portfolio"><img src="formix_portfolio/esports.jpg" alt="ESPORTS jersey design"><span>ESPORTS</span></div>
+<div class="portfolio"><img src="formix_portfolio/sekolah.jpg" alt="JERSEY SEKOLAH jersey design"><span>JERSEY SEKOLAH</span></div>
+<div class="portfolio"><img src="formix_portfolio/komunitas.jpg" alt="KOMUNITAS jersey design"><span>KOMUNITAS</span></div>
+<div class="portfolio"><img src="formix_portfolio/custom.jpg" alt="CUSTOM jersey design"><span>CUSTOM</span></div>
+<div class="portfolio"><img src="formix_portfolio/futsal2.jpg" alt="FUTSAL jersey design"><span>FUTSAL</span></div>
+<div class="portfolio"><img src="formix_portfolio/basket2.jpg" alt="BASKETBALL jersey design"><span>BASKETBALL</span></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">HOW TO ORDER</h2>
+  <p class="sub">Semua proses dilakukan secara online melalui Instagram.</p>
+  <div class="grid steps">
+    <div class="card"><h3>01 — DM</h3><p>Kirim pesan ke Instagram FORMIX.</p></div>
+    <div class="card"><h3>02 — REQUEST</h3><p>Kirim konsep, warna, logo, nama, nomor, dan referensi.</p></div>
+    <div class="card"><h3>03 — PRICE</h3><p>Kami cek tingkat kesulitan dan memberikan harga.</p></div>
+    <div class="card"><h3>04 — DESIGN</h3><p>Setelah deal, desain mulai dikerjakan.</p></div>
+    <div class="card"><h3>05 — REVISION</h3><p>Preview dikirim untuk revisi sesuai ketentuan.</p></div>
+    <div class="card"><h3>06 — FINAL</h3><p>File desain final dikirim setelah pembayaran selesai.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">PRICE</h2>
+  <p class="sub">Harga menyesuaikan tingkat kesulitan desain.</p>
+  <div class="grid">
+    <div class="card"><h3>Jersey Design</h3><p>Harga mulai dari</p><div class="price">Rp15K+</div></div>
+    <div class="card"><h3>Team Logo</h3><p>Harga mulai dari</p><div class="price">Rp10K+</div></div>
+    <div class="card"><h3>Custom Design</h3><p>Harga mulai dari</p><div class="price">Rp10K+</div></div>
+  </div>
+</section>
+
+<section id="order" class="cta">
+  <h2 class="title">READY TO CREATE YOUR TEAM?</h2>
+  <p>Kirim konsep atau referensi desainmu. FORMIX akan membantu mengubahnya menjadi desain jersey yang siap diberikan ke vendor pilihanmu.</p>
+  <a class="btn" href="https://www.instagram.com/formixid1/" target="_blank">DM FORMIX SEKARANG</a>
+</section>
+
+<footer>© 2026 FORMIX — CUSTOM SPORTS DESIGN</footer>
+</body>
+</html>
